@@ -1,0 +1,136 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --teal:#FDA403;
+    --teal-hover:#ea9f13;
+}
+.h-font{
+    font-family: "Merienda", cursive;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.carousel .swiper{
+    width: 100%;
+    height: 70vh;
+}
+
+.carousel .swiper .slide{
+    position: relative;
+}
+
+.carousel .swiper .slide::before{
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.carousel .swiper .slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .swiper .slide .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel .swiper .slide .content h2{
+    color: #ffffff;
+    font-size: 57px;
+}
+
+.carousel .swiper .slide .content h4{
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.custom-bg{
+    background: var(--teal);
+    border: 1px solid var(--teal);
+}
+
+.custom-bg:hover{
+    background: var(--teal-hover);
+    border: 1px solid var(--teal-hover);
+}
+
+.availability-form{
+    margin-top: -70px;
+    z-index: 2;
+    position: relative;
+}
+
+@media(max-width:1020px){
+    .carousel .swiper .slide .content h2{
+        font-size: 32px;
+    }
+
+    .carousel .swiper .slide .content h4{
+        font-size: 22px;
+        color: #ffffff;
+    }
+}
+
+@media(max-width:575px){
+    .carousel .swiper{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .availability-form{
+        margin-top: 25px;
+        padding: 0 35px;
+    }
+}
+
+@media(max-width:550px){
+    .carousel .swiper .slide .content h2{
+        font-size: 24px;
+    }
+}
+
+.testimonials .swiper{
+    width: 100%;
+    height: 40vh;
+}
+
+@media(max-width:450px){
+    .testimonials .swiper{
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+.h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 1.8px;
+}
+
+.pop:hover{
+    border-top-color: var(--teal) !important;
+    transform: scale(1.03);
+    transition: all 0.3s;
+}
+
+.box:hover{
+    border-top-color: var(--teal) !important;
+}
